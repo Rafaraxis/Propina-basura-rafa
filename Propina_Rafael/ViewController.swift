@@ -10,6 +10,12 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var lblPorcentajePropina: UILabel!
+    @IBOutlet weak var lblSlider: UISlider!
+    var porcentaje = 0.0
+    @IBAction func sldpPropina(sender: AnyObject) {
+        porcentaje = Double(sldpPropina.value)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
